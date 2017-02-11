@@ -29,7 +29,7 @@ stage ("Build") {
 stage ("Archive") {
     node ('windows') {
         ws ("workspace/${workspace}") {
-            archiveArtifacts artifacts: "tensorflow/tensorflow/contrib/cmake/build_windows_x86_64/RelWithDebInfo/tf_sharedlib.*", fingerprint: true
+            archiveArtifacts artifacts: "tensorflow/tensorflow/contrib/cmake/build_windows_x86_64/RelWithDebInfo/tensorflow.*", fingerprint: true
         }
     }
 }
